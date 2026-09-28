@@ -49,7 +49,6 @@ adb shell cmd package resolve-activity --brief io.appium.android.apis
 - `charly.yml` — the `android-apidemos:` candy entity (the `apk:` committed-file
   path and the deploy-scope `adb:` checks).
 - `tests/data/ApiDemos-debug.apk` — the committed APK fixture (md5 `f968ec5b`).
-- `.github/workflows/` — the org-wide `charly/pr-validator` gate; no per-repo candy gate.
 - `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
 - `README.md` — this user overview.
 

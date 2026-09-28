@@ -18,7 +18,6 @@ Canonical files:
 - `tests/data/ApiDemos-debug.apk` — the committed APK fixture; the `apk:` path is
   project-root-relative to the candy's own source tree, so this file must ship in
   the repo.
-- `.github/workflows/` — the org-wide `charly/pr-validator` gate; there is no per-repo candy gate.
 - `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
 - `README.md` — user overview only; never agent guidance.
 
@@ -37,8 +36,9 @@ Canonical files:
 
 - `charly box validate` at the repo root — the same structural gate CI runs.
   Keep the `version:` schema stamp within the installed charly's supported range.
-- The merge gate is the org-wide `charly/pr-validator` (required check
-  `validate / validate`); there is no per-repo candy gate.
+- The merge gate is the **org-wide** `charly/pr-validator` (required check
+  `validate / validate`, defined in `opencharly/.github`); this repo has no
+  per-repo candy gate.
 - The runtime evidence is deploy-scope: the candy's `plan:` `adb:` checks run
   against a booted `kind: android` device, not in CI. The R10 bed for the
   endpoint-device path is `check-android-emulator-pod` in `opencharly/charly`.
