@@ -1,5 +1,7 @@
+version: 2026.232.0520
 android-apidemos:
     candy:
+        version: 2026.145.1700
         description: |
             The committed ApiDemos APK (io.appium.android.apis) installed onto a kind:android device via the apk committed-file goadb-push path.
             The committed ApiDemos APK (io.appium.android.apis) installed onto a
